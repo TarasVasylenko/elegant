@@ -7980,8 +7980,8 @@ img.img__3 {
   background-size: cover;
 }
 .slide-3 .container {
-  position: relative;
   min-height: 500px;
+  position: relative;
 }
 .slide-3 h1 {
   margin: 170px auto 15px auto;
@@ -8279,9 +8279,6 @@ footer p {
     padding: 0 7px 0 7px;
   }
 
-  .slide-2 {
-    margin-top: 50px;
-  }
   .slide-2 .row {
     margin-top: 35px;
   }
@@ -8371,6 +8368,9 @@ footer p {
     width: 20%;
   }
 
+  .slide-2 {
+    padding-top: 50px;
+  }
   .slide-2 a {
     font-size: 18px;
     text-decoration: underline;
@@ -8380,10 +8380,11 @@ footer p {
   }
 
   .slide-3 {
+    padding: 50px 0 50px;
     min-height: auto;
   }
   .slide-3 h1 {
-    margin-top: 120px;
+    margin-top: 0;
   }
 
   .slide-4__dec {
@@ -8395,9 +8396,20 @@ footer p {
     margin: 0;
     margin-bottom: 20px;
   }
+  .slide-4 .hover-img {
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 58, 58, 0.6);
+  }
 
+  .slide-5 {
+    padding-top: 50px;
+  }
   .slide-5 h2 {
-    padding-top: 30px;
+    padding-top: 0;
   }
   .slide-5 .col-480 {
     width: 100%;
