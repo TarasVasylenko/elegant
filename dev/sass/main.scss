@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,400,400i|Raleway:400,700');
-@import "../../node_modules/bootstrap/dist/css/bootstrap.css";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "normalize";
 @import "variables";
 @import "mixin";
@@ -36,7 +36,8 @@
 }
 
 body{
-	background: $color-bg;
+	background: url(../../prod/images/body_bg.jpg) no-repeat top center fixed;
+	background-size: cover;
 	font-family: $main-font;
 	color: $font-color;
 	font-size: $font-size;
@@ -163,8 +164,9 @@ h2{
 
 .slide-2{
 	width: 100%;
-	margin: 115px auto 0 auto;
+	padding-top: 115px;
 	min-height: 735px;
+	background: $font-color;
 	color: $header-color;
 	img{
 		margin: auto;
@@ -250,7 +252,6 @@ img.img__3{
 .slide-4{
 	width: 100%;
 	min-height: 950px;
-	color: $header-color;
 
 	h2{
 		margin: 115px auto 0 auto;
@@ -271,23 +272,23 @@ img.img__3{
  .img-wrap{
  	position: relative;
  	@include transition($prop, $time, $funct);
+ 	cursor: pointer;
  }
 
  .hover-img{
  	position: absolute;
- 	top: 0;
  	bottom: 0;
  	left: 0;
  	right: 0;
+ 	overflow: hidden;
+ 	width: 0;
  	height: 100%;
- 	width: 100%;
- 	opacity: 0;
  	transition: .5s ease;
  	background-color: rgba(58,58,58, 0.7);
  }
 
  .img-wrap:hover .hover-img {
- 	opacity: 1;
+ 	width: 100%;
  }
 
  .text {
@@ -319,7 +320,7 @@ img.img__3{
  		text-decoration: none;
  		font-size: 24px;
  		color: $header-color;
- 		@include btn-hover($header-color, $font-color)
+ 		@include btn-hover($header-color,$font-color)
  	}
  }
 
@@ -329,11 +330,11 @@ img.img__3{
  	width: 100%;
  	margin: auto;
  	min-height: 800px;
+ 	padding-top: 115px;
  	color: $header-color;
  	background: url(../../prod/images/bg5.png) no-repeat center center;
  	background-size: cover;
  	h2{
- 		padding-top: 115px;
  		color: $font-color;
  	}
  }
@@ -618,8 +619,8 @@ img.img__3{
 
  }
 
-@media (min-width: 1200px) {
-	@import "animate";
-}
+ @media (min-width: 1200px) {
+ 	@import "animate";
+ }
 
 

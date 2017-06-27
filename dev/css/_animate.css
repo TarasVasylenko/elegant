@@ -2,8 +2,6 @@
 .title-1 {
   transform: translateY(-200%);
   opacity: 0;
-  position: relative;
-  border-radius: 10px;
   transition: opasity 2s ease, transform 2s ease;
 }
 
@@ -12,22 +10,9 @@
   opacity: 1;
 }
 
-.slide-2 h2 {
-  transform: translateY(-200%);
-  opacity: 0;
-  position: relative;
-  border-radius: 10px;
-  transition: opacity 2s ease, transform 2s ease;
-}
-.slide-2 h2.show {
-  transform: translateY(0);
-  opacity: 1;
-}
 .slide-2 .col-md-4 {
   transform: translateY(200%);
   opacity: 0;
-  position: relative;
-  border-radius: 10px;
   transition: opacity 2s ease, transform 2s ease;
 }
 .slide-2 .col-md-4.show {
@@ -35,15 +20,32 @@
   opacity: 1;
 }
 
-.slide-2__dec {
+.slide-2__title,
+.slide-4__title,
+.slide-5__title {
+  transform: translateY(-200%);
+  opacity: 0;
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.slide-2__title.show,
+.slide-4__title.show,
+.slide-5__title.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.slide-2__dec,
+.slide-4__dec,
+.slide-5__dec {
   transform: translateX(-500%);
   opacity: 0;
-  position: relative;
-  border-radius: 10px;
   transition: opacity 1s ease 0.5s, transform 1s ease 0.5s;
 }
 
-.slide-2__dec.show {
+.slide-2__dec.show,
+.slide-4__dec.show,
+.slide-5__dec.show {
   transform: translateX(0);
   opacity: 1;
 }
@@ -51,12 +53,21 @@
 .slide-3__descr {
   transform: translateX(-100%);
   opacity: 0;
-  position: relative;
-  border-radius: 10px;
-  transition: opacity 1s ease 0.5s, transform 1s ease 0.5s;
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 .slide-3__descr.show {
   transform: translateX(0);
+  opacity: 1;
+}
+
+.slide-3__img {
+  transform: translateY(100%) scale(0);
+  opacity: 0;
+  transition: opacity 1.5s ease .5s, transform 1s ease;
+}
+
+.slide-3__img.show {
+  transform: translateY(0) scale(1);
   opacity: 1;
 }

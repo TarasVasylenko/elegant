@@ -32,7 +32,7 @@
 		.pipe(gulp.dest('./prod/js/'))
 		.pipe(rename({suffix: '.min'}))
 		.pipe(uglify())
-		.pipe(gulp.dest('dist/js/'))
+		.pipe(gulp.dest('./prod/js/'))
 		.pipe(notify({ message: 'Scripts task complete' }))
 		.pipe(browserSync.stream());
 	});
