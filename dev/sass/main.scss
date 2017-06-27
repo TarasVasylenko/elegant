@@ -485,6 +485,12 @@ img.img__3{
  	}
 
  	.slide-3 {
+ 		min-height: auto;
+		
+		.container {
+			min-height: auto;
+		}
+
  		.col-sx-12 {
  			text-align: center;
  		}
@@ -492,12 +498,17 @@ img.img__3{
  			opacity: 0;
  		}
  		h1 {
+ 			margin-top: 50px;
  			font-size: 36px;
  		}
 
  		p {
  			font-size: 18px;
  		}
+ 	}
+
+ 	.slide-3__descr {
+ 		padding-bottom: 50px;
  	}
 
  	.slide-4 {
@@ -514,7 +525,7 @@ img.img__3{
  		margin: 30px auto 35px auto;
  	}
 
- 	
+
 
  	.button__slide-4 {
  		margin-top: 0;

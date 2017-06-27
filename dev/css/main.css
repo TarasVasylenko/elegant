@@ -8297,6 +8297,12 @@ footer p {
     margin-top: 30px;
   }
 
+  .slide-3 {
+    min-height: auto;
+  }
+  .slide-3 .container {
+    min-height: auto;
+  }
   .slide-3 .col-sx-12 {
     text-align: center;
   }
@@ -8304,10 +8310,15 @@ footer p {
     opacity: 0;
   }
   .slide-3 h1 {
+    margin-top: 50px;
     font-size: 36px;
   }
   .slide-3 p {
     font-size: 18px;
+  }
+
+  .slide-3__descr {
+    padding-bottom: 50px;
   }
 
   .slide-4 h2 {
